@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>System Information</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>System Information</h1>
+    <table>
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Operating System Version</td>
+            <td>@ViewData["OSVersion"]</td>
+        </tr>
+        <tr>
+            <td>Processor Architecture</td>
+            <td>@ViewData["ProcessorArchitecture"]</td>
+        </tr>
+        <tr>
+            <td>.NET Framework Version</td>
+            <td>@ViewData["FrameworkVersion"]</td>
+        </tr>
+        <tr>
+            <td>Machine Name</td>
+            <td>@ViewData["MachineName"]</td>
+        </tr>
+        <tr>
+            <td>Current User</td>
+            <td>@ViewData["CurrentUser"]</td>
+        </tr>
+        <tr>
+            <td>Browser</td>
+            <td>@ViewData["Browser"]</td>
+        </tr>
+        <tr>
+            <td>User Time</td>
+            <td>@ViewData["UserTime"]</td>
+        </tr>
+        <tr>
+            <td>Public IP Address</td>
+            <td>@ViewData["PublicIPAddress"]</td>
+        </tr>
+    </table>
+</body>
+</html>
